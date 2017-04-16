@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamarinFormsLocalDb.myPlanner">
+	<ContentPage.Content>
+		<StackLayout Padding="20" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto" />
+					<ColumnDefinition Width="*" />
+				</Grid.ColumnDefinitions>
+				<Label Text="CompanyName:" Grid.Row="0" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center" />
+				<Entry Text="{Binding CompanyName}" Grid.Row="0" Grid.Column="1" />
+				<Label Text="Position:" Grid.Row="1" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center" />
+				<Entry Text="{Binding Position}" Grid.Row="1" Grid.Column="1" />
+				<Label Text="AboutJob:" Grid.Row="2" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center" />
+				<Entry Text="{Binding AboutJob}" Grid.Row="2" Grid.Column="1" />
+				<Label Text="PayRate:" Grid.Row="3" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center" />
+				<Entry Text="{Binding PayRate}" Grid.Row="3" Grid.Column="1" />
+				<Label Text="CompanySites:" Grid.Row="4" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center" />
+				<Entry Text="{Binding CompanySites}" Grid.Row="4" Grid.Column="1" />
+				<Label Text="Workauthorization:" Grid.Row="5" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center" />
+				<Entry Text="{Binding Workauthorization}" Grid.Row="5" Grid.Column="1" />
+				<Label Text="ContactInfo:" Grid.Row="6" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center" />
+				<Entry Text="{Binding ContactInfo}" Grid.Row="6" Grid.Column="1" />
+				<Label Text="appliedDate:" Grid.Row="7" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center" />
+				<Entry Text="{Binding appliedDate}" Grid.Row="7" Grid.Column="1" />
+				<Label Text="interviewDate:" Grid.Row="8" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center" />
+				<Entry Text="{Binding interviewDate}" Grid.Row="8" Grid.Column="1" />
+				<Label Text="Accept:" Grid.Row="9" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center" />
+				<Switch IsToggled="{Binding IsCustomTeamNamesSwitchToggled}" Grid.Column="1" Grid.Row="9" VerticalOptions="Center" HorizontalOptions="End" />
+				<Label Text="Reject:" Grid.Row="10" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center" />
+				<Entry Text="{Binding Reject}" Grid.Row="10" Grid.Column="1" />
+			</Grid>
+			<Button Text="Save" HorizontalOptions="FillAndExpand" BackgroundColor="Blue" TextColor="White" Clicked="Save_Clicked" />
+			<Button Text="Delete" HorizontalOptions="FillAndExpand" BackgroundColor="Blue" TextColor="White" Clicked="Save_Clicked1" />
+			
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
